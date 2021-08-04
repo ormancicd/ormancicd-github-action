@@ -1,0 +1,17 @@
+{
+  "name": "orman-cicd",
+  "version": "0.0.1",
+  "description": "Yazdığınız her kod bir ağaç olsun!",
+  "main": "orman.js",
+  "scripts": {
+    "build": "ncc build orman.js --license licenses.txt && mv dist/index.js dist/orman.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["orman", "ci", "cd", "ağaç", "forest"],
+  "author": "Muhammed Kılıç <muhammeddkilicc@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "^1.4.0",
+    "@actions/github": "^5.0.0"
+  }
+}

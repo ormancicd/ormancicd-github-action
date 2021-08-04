@@ -1,0 +1,24 @@
+name: 'Orman CI/CD'
+description: 'Yazdığınız her kod bir ağaç olsun!'
+branding:
+  icon: 'droplet'
+  color: 'green'
+inputs:
+  organization-id:
+    description: 'Kurumunuza özel atanmış ID.'
+    required: false
+    default: '0'
+  planting-area-id:
+    description: 'Ağaç dikmek istediğiniz bölgeye atanmış ID.'
+    required: false
+    default: '0'
+  agac-sayisi:
+    description: 'Dikmek istediğiniz ağaç sayısı.'
+    required: false
+    default: '1'
+outputs:
+  response:
+    description: 'Sonuç'
+runs:
+  using: 'node12'
+  main: 'orman.js'
