@@ -1,12 +1,3 @@
-# Orman CI/CD GitHub Action
-
-Bu GitHub Action geçici olarak ağaç bağışladığınızı varsayan bir mesaj oynatır.
-
-## Örnek Kullanım
- 
-[demo.yml](demo.yml) dosyasından erişebilir veya aşağıdaki scripti kopyalayıp kullanabilirsiniz.
-
-```
 name: Orman CI/CD Demo
 
 on:
@@ -31,4 +22,3 @@ jobs:
         agac-sayisi: 100
     - name: Orman CI/CD Response
       run: echo "${{ steps.orman_cicd.outputs.response }}"
-```
